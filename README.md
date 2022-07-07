@@ -22,3 +22,10 @@ Tasks include:
 ### Links and Resources
 
 * [ci/cd](https://github.com/ehammes/image-lambda-17/actions) (GitHub Actions)
+
+#### Setup
+
+* **S3 Bucket**: add jpeg files to the following s3 bucket called `image-lambda-17`
+* **Lambda**: Using the `add-image` lambda, the trigger is configured for .jpeg files added to the `image-lambda-17` s3 bucket and captures file information to the images.json file
+* **images.json file**: [images.json](/images.json)
+* Needed to verify that all access controls were configured correctly (ie s3 policy access) in order for lambda to access the s3 bucket
